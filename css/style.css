@@ -99,6 +99,21 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px)
 .vcard-foot small{color:var(--cream-mute);font-size:.76rem;display:flex;align-items:center;gap:8px}
 .vcard-foot small svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:1.6;flex:none}
 
+/* Wertermittlungs-Formular */
+.vform-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.vfield{display:flex;flex-direction:column;gap:6px}
+.vfield.full{grid-column:1 / -1}
+.vfield label{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--silver);font-weight:600}
+.vfield input{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,106,.22);border-radius:3px;padding:12px 14px;color:var(--platinum);font-family:var(--sans);font-size:.9rem;transition:border-color .2s}
+.vfield input::placeholder{color:var(--cream-mute)}
+.vfield input:focus{outline:none;border-color:var(--gold)}
+.vfield input.field-invalid{border-color:#d9705f}
+.vconsent{display:flex;gap:10px;align-items:flex-start;font-size:.78rem;color:var(--silver);font-weight:300;margin-bottom:18px}
+.vconsent input{margin-top:3px;accent-color:var(--gold);flex:none}
+.vconsent a{color:var(--gold);text-decoration:underline}
+.vstatus{flex-basis:100%;font-size:.82rem;margin-top:4px;min-height:1.1em}
+.vstatus.ok{color:#7bbf6f}.vstatus.err{color:#e0897b}
+
 /* Trust */
 .trust{background:var(--cream);color:var(--cream-ink);padding:64px 0}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
