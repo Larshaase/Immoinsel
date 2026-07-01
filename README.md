@@ -59,9 +59,7 @@ python -m http.server 8000   # danach: http://localhost:8000
 - **E-Mail:** aktuell `hallo@immoinsel.de` (Platzhalter – echte Adresse bestätigen)
 - **Impressum:** Register/USt-IdNr. (falls vorhanden), **Erlaubnis nach § 34c GewO**
   + zuständige Behörde, Berufs-/Vermögensschadenhaftpflicht
-- **Team-Fotos:** aktuell elegante Gold-Monogramme (MS / JW). Sobald professionelle
-  Porträts vorliegen: als `img/team-schwonke.jpg` / `img/team-wendorff.jpg` ablegen und
-  im `<div class="tcard-mono">` durch `<div class="tcard-img" style="background-image:url('…')">` ersetzen.
+- **Team-Foto:** professionelles Porträt eingebaut (`img/team.jpg`, Schwonke & Wendorff).
 - **Objektfotos:** aktuell Unsplash-Platzhalter → echte Objektbilder in `img/` ablegen
 - **Kennzahlen & Bewertung** (Trust-Band) durch echte Werte ersetzen
 - **Domain** (`www.immoinsel.de`) in `index.html`, `robots.txt`, `sitemap.xml` prüfen
