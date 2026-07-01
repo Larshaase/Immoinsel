@@ -46,17 +46,26 @@ python -m http.server 8000   # danach: http://localhost:8000
 - **Signature:** das Herz aus der Wortmarke als wiederkehrendes Trennelement.
 - Die Wortmarke „IMMO ♥ INSEL" ist in CSS nachgebaut (kein Bild nötig).
 
-## Noch anzupassen (Beispieldaten → echte Daten)
+## Echte Daten (bereits eingebaut)
 
-Die Seite ist mit **Beispieldaten** befüllt. Vor dem Livegang bitte ersetzen:
+- **Firma:** ImmoInsel – Inh. Mary Ann Schwonke (Immobilienmaklerin)
+- **Adresse:** Strausberger Str. 1, 15345 Petershagen/Eggersdorf (OT Eggersdorf)
+- **Telefon:** 03341 445512
+- **Team:** Mary Ann Schwonke (Inhaberin & Immobilienmaklerin),
+  Jean Paul Wendorff (Immobilienspezialist & Steuerberater, Immobilien & Finanzierungen)
 
-- **Kontakt/Adresse/Telefon/E-Mail** in `index.html`, `impressum.html`, `datenschutz.html`
-- **Impressum:** Rechtsform, Inhaber/Geschäftsführer, Register, USt-IdNr.,
-  **Erlaubnis nach § 34c GewO** + Aufsichtsbehörde, Berufshaftpflicht
-- **Objekte & Team:** echte Fotos in `img/` ablegen und die Pfade/Texte anpassen
-  (`img/objekt-1.jpg` … `img/team-1.jpg`, `img/hero.jpg`, `img/cta.jpg`, `img/og-image.jpg`)
-- **Kennzahlen & Bewertung** durch echte Werte ersetzen
+## Noch anzupassen (offene Platzhalter)
+
+- **E-Mail:** aktuell `hallo@immoinsel.de` (Platzhalter – echte Adresse bestätigen)
+- **Impressum:** Register/USt-IdNr. (falls vorhanden), **Erlaubnis nach § 34c GewO**
+  + zuständige Behörde, Berufs-/Vermögensschadenhaftpflicht
+- **Team-Fotos:** aktuell elegante Gold-Monogramme (MS / JW). Sobald professionelle
+  Porträts vorliegen: als `img/team-schwonke.jpg` / `img/team-wendorff.jpg` ablegen und
+  im `<div class="tcard-mono">` durch `<div class="tcard-img" style="background-image:url('…')">` ersetzen.
+- **Objektfotos:** aktuell Unsplash-Platzhalter → echte Objektbilder in `img/` ablegen
+- **Kennzahlen & Bewertung** (Trust-Band) durch echte Werte ersetzen
 - **Domain** (`www.immoinsel.de`) in `index.html`, `robots.txt`, `sitemap.xml` prüfen
+- **SFTP-Zugang** in `upload.ps1` eintragen
 
 ## Bilder
 

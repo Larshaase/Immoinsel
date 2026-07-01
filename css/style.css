@@ -155,9 +155,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px)
 
 /* Team */
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.team.team-2{grid-template-columns:repeat(2,1fr);max-width:720px;margin:0 auto}
 .tcard{text-align:center}
 .tcard-img{width:100%;aspect-ratio:4/5;border-radius:4px;background-size:cover;background-position:center;filter:grayscale(.25);transition:.4s}
 .tcard:hover .tcard-img{filter:grayscale(0)}
+/* Monogramm-Platzhalter (bis professionelle Porträts vorliegen) */
+.tcard-mono{display:grid;place-items:center;aspect-ratio:4/5;border-radius:4px;
+  background:linear-gradient(160deg,var(--anthracite-2),#101216);border:1px solid var(--line)}
+.tcard-mono span{font-family:var(--serif);font-size:3.4rem;letter-spacing:.06em;
+  background:linear-gradient(180deg,var(--gold-lite),var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
 .tcard h3{font-size:1.4rem;margin:18px 0 2px;color:var(--cream-ink)}
 .tcard .role{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
 .tcard .tel{font-size:.86rem;color:var(--cream-mute);margin-top:10px}
