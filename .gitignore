@@ -1,0 +1,15 @@
+# Betriebssystem
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# Editor / IDE
+.vscode/
+*.code-workspace
+
+# Temporäre / generierte Hilfsdateien
+_build_inline.ps1
+immoinsel-upload.zip
+*.tmp
+*.log
