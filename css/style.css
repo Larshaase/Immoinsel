@@ -18,6 +18,10 @@ body{font-family:var(--sans);background:var(--anthracite);color:var(--platinum);
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
+/* Logo (offizielles Kit) */
+.logo-img{height:50px;width:auto;display:block}
+.logo-foot{height:45px}
+
 /* Wordmark */
 .mark{display:inline-flex;flex-direction:column;align-items:center;line-height:1}
 .mark-row{font-family:var(--serif);font-weight:500;font-size:1.7rem;letter-spacing:.18em;display:flex;align-items:center;gap:.5em}
@@ -272,6 +276,7 @@ footer{background:var(--ink);padding:70px 0 36px;border-top:1px solid rgba(201,1
   .trust-grid,.listings,.process,.team,.chips,.foot-grid,.services,.region-grid{grid-template-columns:1fr}
   .wrap{padding:0 20px}.hero h1{font-size:2.4rem}
   .faq-item summary{font-size:1.12rem}
+  .logo-img{height:42px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}

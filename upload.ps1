@@ -25,7 +25,7 @@ Import-Module Posh-SSH
 $stage = Join-Path $env:TEMP 'immoinsel-deploy'
 Remove-Item $stage -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Path $stage | Out-Null
-foreach ($f in 'index.html','impressum.html','datenschutz.html','robots.txt','sitemap.xml','favicon.ico') {
+foreach ($f in 'index.html','impressum.html','datenschutz.html','robots.txt','sitemap.xml','favicon.ico','site.webmanifest') {
   if (Test-Path (Join-Path $PSScriptRoot $f)) { Copy-Item (Join-Path $PSScriptRoot $f) $stage }
 }
 foreach ($d in 'css','js','fonts','img') {
