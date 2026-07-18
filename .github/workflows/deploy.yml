@@ -1,0 +1,46 @@
+name: Deploy zu Strato (SFTP)
+
+# Bei jedem Push auf main automatisch deployen – plus manuell startbar (Actions-Tab).
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Saubere Upload-Kopie bauen: interne Dateien, Git und Vorschau raus.
+      - name: Upload-Ordner vorbereiten
+        run: |
+          rsync -a ./ ./_site/ \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            --exclude='*.md' \
+            --exclude='upload.ps1' \
+            --exclude='Immoinsel-Vorschau.html' \
+            --exclude='img/_quellen'
+
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          # Diese drei Werte als GitHub-Secrets hinterlegen
+          # (Repo -> Settings -> Secrets and variables -> Actions).
+          # ACHTUNG: Repo ist oeffentlich – Server/User NIEMALS hier eintragen.
+          server:   ${{ secrets.FTP_SERVER_IMMOINSEL }}
+          username: ${{ secrets.FTP_USERNAME_IMMOINSEL }}
+          password: ${{ secrets.FTP_PASSWORD_IMMOINSEL }}
+          port: 22
+          sftp_only: true
+
+          # Quelle = vorbereiteter Ordner; Ziel = Unterordner "immoinsel" im Webspace.
+          # STRATO erlaubt interne Domain-Umleitungen nur auf Unterverzeichnisse,
+          # nicht auf die Root-Ebene "/". Domain immoinsel.de muss auf "immoinsel" zeigen.
+          # WICHTIG: Ordner "immoinsel" muss im Webspace bereits existieren
+          # (sftp_only legt ihn nicht an).
+          local_path: './_site/*'
+          remote_path: '/immoinsel/'
