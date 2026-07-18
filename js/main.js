@@ -149,6 +149,17 @@
     });
   }
 
+  /* --- FAQ: immer nur eine Frage offen --- */
+  var faqItems = Array.prototype.slice.call(document.querySelectorAll(".faq-item"));
+  faqItems.forEach(function (item) {
+    item.addEventListener("toggle", function () {
+      if (!item.open) return;
+      faqItems.forEach(function (other) {
+        if (other !== item && other.open) other.open = false;
+      });
+    });
+  });
+
   /* --- Objekt merken (Herz-Button) --- */
   document.querySelectorAll(".lcard-fav").forEach(function (fav) {
     fav.addEventListener("click", function () {

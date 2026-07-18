@@ -51,13 +51,62 @@
   }
   </script>
 
+  <!-- FAQ strukturierte Daten (muss inhaltlich zur FAQ-Sektion passen) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was kostet mich die Zusammenarbeit mit ImmoInsel?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die Wertermittlung und die Erstberatung sind kostenlos und unverbindlich. Eine Provision fällt nur im Erfolgsfall an – also dann, wenn Ihre Immobilie tatsächlich verkauft wird. Die Höhe besprechen wir transparent im ersten Gespräch." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert der Verkauf einer Immobilie?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Im Durchschnitt finden wir in rund drei Wochen einen Käufer. Bis zur notariellen Beurkundung und Kaufpreiszahlung sollten Sie insgesamt zwei bis drei Monate einplanen – abhängig von Objekt, Preis und Finanzierung des Käufers." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie läuft die kostenlose Wertermittlung ab?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sie senden uns über das Formular einige Eckdaten, wir melden uns innerhalb von 24 Stunden. Nach einer Besichtigung vor Ort erhalten Sie eine fundierte Einschätzung auf Basis aktueller Vergleichswerte aus der Region – ohne jede Verpflichtung." }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Unterlagen brauche ich für den Verkauf?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typischerweise Grundbuchauszug, Flurkarte, Grundrisse, Wohnflächenberechnung und Energieausweis; bei Eigentumswohnungen zusätzlich Teilungserklärung und Protokolle der Eigentümerversammlung. Fehlende Unterlagen besorgen wir für Sie." }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauche ich einen Energieausweis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja – spätestens zur Besichtigung ist er gesetzlich vorgeschrieben, und schon im Inserat müssen die Energiekennwerte genannt werden. Falls kein Ausweis vorliegt, kümmern wir uns um die Erstellung." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist meine Immobilie wert?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Das hängt von Lage, Zustand, Baujahr, Energetik und der aktuellen Nachfrage ab. Pauschale Online-Rechner liefern nur grobe Spannen – wir bewerten mit Vergleichswerten aus Petershagen/Eggersdorf, Strausberg und dem Umland und begründen jede Zahl." }
+      },
+      {
+        "@type": "Question",
+        "name": "Unterstützen Sie auch bei Finanzierung und steuerlichen Fragen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja – mit Jean Paul Wendorff ist ein Steuerberater fest im Team. Fragen zu Spekulationsfrist, Finanzierung oder dem Verkauf geerbter Immobilien klären wir gemeinsam, bevor teure Fehler entstehen." }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Orten ist ImmoInsel aktiv?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Unser Kerngebiet reicht von Petershagen/Eggersdorf über Strausberg, Fredersdorf-Vogelsdorf, Neuenhagen und Rüdersdorf bis an den Berliner Ostrand. Auch außerhalb davon helfen wir gern weiter – fragen Sie einfach an." }
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
   <link rel="apple-touch-icon" href="img/favicon-180.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Schriften lokal gehostet (DSGVO) -->
+  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -79,10 +128,12 @@
 
     <div class="nav-panel" id="navPanel">
       <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
         <a href="#angebote">Angebote</a>
-        <a href="#verkaufen">Verkaufen</a>
         <a href="#ablauf">Ablauf</a>
         <a href="#team">Team</a>
+        <a href="#region">Region</a>
+        <a href="#faq">FAQ</a>
       </nav>
       <a href="#bewertung" class="btn btn-gold">Immobilie bewerten</a>
     </div>
@@ -195,6 +246,40 @@
     <div class="stat"><div class="n">4,9</div><div class="l">Google-Bewertung</div></div>
     <div class="stat"><div class="n">98<em>%</em></div><div class="l">Vom Angebotspreis erzielt</div></div>
     <div class="stat"><div class="n">340<em>+</em></div><div class="l">Vermittelte Objekte</div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="leistungen">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="hdiv"><span></span><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 78 C20 55 8 38 8 24 C8 12 18 6 28 6 C38 6 46 14 50 22 C54 14 62 6 72 6 C82 6 92 12 92 24 C92 38 80 55 50 78 Z"/></svg><span></span></div>
+      <h2>Alles aus einer Hand</h2>
+      <p>Vom ersten Gedanken an den Verkauf bis zur steuerlichen Frage danach — bei uns müssen Sie nicht zwischen Ansprechpartnern springen.</p>
+    </div>
+    <div class="services">
+      <article class="scard">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>
+        <h3>Verkauf</h3>
+        <p>Marktgerechte Bewertung, hochwertiges Exposé und Verhandlungen mit Fingerspitzengefühl — bis zum Notartermin und darüber hinaus.</p>
+      </article>
+      <article class="scard">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="16.5" r="4.5"/><path d="M11 13L21 3M16 8l3 3M18.5 5.5l2 2"/></svg>
+        <h3>Vermietung</h3>
+        <p>Wir finden Mieter, die zu Ihrer Immobilie passen: Mietpreisermittlung, Bonitätsprüfung und rechtssichere Übergabe inklusive.</p>
+      </article>
+      <article class="scard">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+        <h3>Wertermittlung</h3>
+        <p>Kostenlos und unverbindlich: eine fundierte Markteinschätzung auf Basis aktueller Vergleichswerte aus der Region.</p>
+        <a class="snote" href="#bewertung">Jetzt bewerten lassen →</a>
+      </article>
+      <article class="scard">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+        <h3>Finanzierung &amp; Steuern</h3>
+        <p>Unser Plus: Mit Steuerberater Jean Paul Wendorff denken wir Finanzierung und steuerliche Folgen von Anfang an mit.</p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -319,6 +404,89 @@
   </div>
 </section>
 
+<!-- REGION -->
+<section class="section" id="region">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="hdiv"><span></span><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 78 C20 55 8 38 8 24 C8 12 18 6 28 6 C38 6 46 14 50 22 C54 14 62 6 72 6 C82 6 92 12 92 24 C92 38 80 55 50 78 Z"/></svg><span></span></div>
+      <h2>Zuhause zwischen Strausberg und Berlin</h2>
+      <p>Wir verkaufen keine Adressen, sondern Orte, die wir selbst kennen — mit ihren Straßen, Preisen und Besonderheiten.</p>
+    </div>
+    <div class="region-grid">
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Petershagen/Eggersdorf</h3>
+        <p>Unser Zuhause und Firmensitz. Die Doppelgemeinde ist gefragt wie nie — ruhig, grün und mit S-Bahn-Anschluss nach Berlin.</p>
+      </article>
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Strausberg</h3>
+        <p>Die Stadt am See: Vom historischen Altstadtkern bis zur Vorstadt begleiten wir hier Verkäufe aller Größenordnungen.</p>
+      </article>
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Fredersdorf-Vogelsdorf</h3>
+        <p>Beliebt bei Familien, die Berlin nah, aber nicht vor der Haustür wollen. Einfamilienhäuser sind hier besonders gefragt.</p>
+      </article>
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Neuenhagen</h3>
+        <p>Gewachsene Wohnlagen und gute Infrastruktur — Häuser und Grundstücke erzielen hier konstant starke Preise.</p>
+      </article>
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Rüdersdorf</h3>
+        <p>Zwischen Kalksee und Museumspark: viel Potenzial für Käufer, die Wasser- und Naturlage suchen.</p>
+      </article>
+      <article class="rcard">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Berliner Ostrand</h3>
+        <p>Mahlsdorf, Kaulsdorf, Köpenick: Wir vermitteln auch dort, wo Berlin ins Grüne übergeht.</p>
+      </article>
+    </div>
+    <p class="region-note">Ihr Ort ist nicht dabei? Wir sind im gesamten Umland unterwegs — <a href="#bewertung">sprechen Sie uns einfach an</a>.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-cream" id="faq">
+  <div class="wrap">
+    <div class="s-head">
+      <div class="hdiv"><span></span><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 78 C20 55 8 38 8 24 C8 12 18 6 28 6 C38 6 46 14 50 22 C54 14 62 6 72 6 C82 6 92 12 92 24 C92 38 80 55 50 78 Z"/></svg><span></span></div>
+      <h2>Häufige Fragen</h2>
+      <p>Die Antworten auf das, was Verkäuferinnen und Verkäufer uns am häufigsten fragen — offen und ohne Kleingedrucktes.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Was kostet mich die Zusammenarbeit mit ImmoInsel?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Die Wertermittlung und die Erstberatung sind kostenlos und unverbindlich. Eine Provision fällt nur im Erfolgsfall an — also dann, wenn Ihre Immobilie tatsächlich verkauft wird. Die Höhe besprechen wir transparent im ersten Gespräch.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Wie lange dauert der Verkauf einer Immobilie?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Im Durchschnitt finden wir in rund drei Wochen einen Käufer. Bis zur notariellen Beurkundung und Kaufpreiszahlung sollten Sie insgesamt zwei bis drei Monate einplanen — abhängig von Objekt, Preis und Finanzierung des Käufers.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Wie läuft die kostenlose Wertermittlung ab?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Sie senden uns über das <a href="#bewertung">Formular</a> einige Eckdaten, wir melden uns innerhalb von 24 Stunden. Nach einer Besichtigung vor Ort erhalten Sie eine fundierte Einschätzung auf Basis aktueller Vergleichswerte aus der Region — ohne jede Verpflichtung.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Unterlagen brauche ich für den Verkauf?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Typischerweise Grundbuchauszug, Flurkarte, Grundrisse, Wohnflächenberechnung und Energieausweis; bei Eigentumswohnungen zusätzlich Teilungserklärung und Protokolle der Eigentümerversammlung. Fehlende Unterlagen besorgen wir für Sie.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Brauche ich einen Energieausweis?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Ja — spätestens zur Besichtigung ist er gesetzlich vorgeschrieben, und schon im Inserat müssen die Energiekennwerte genannt werden. Falls kein Ausweis vorliegt, kümmern wir uns um die Erstellung.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Was ist meine Immobilie wert?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Das hängt von Lage, Zustand, Baujahr, Energetik und der aktuellen Nachfrage ab. Pauschale Online-Rechner liefern nur grobe Spannen — wir bewerten mit Vergleichswerten aus Petershagen/Eggersdorf, Strausberg und dem Umland und begründen jede Zahl.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Unterstützen Sie auch bei Finanzierung und steuerlichen Fragen?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Ja — mit Jean Paul Wendorff ist ein Steuerberater fest im Team. Fragen zu Spekulationsfrist, Finanzierung oder dem Verkauf geerbter Immobilien klären wir gemeinsam, bevor teure Fehler entstehen.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>In welchen Orten ist ImmoInsel aktiv?<span class="fplus" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Unser Kerngebiet reicht von Petershagen/Eggersdorf über Strausberg, Fredersdorf-Vogelsdorf, Neuenhagen und Rüdersdorf bis an den Berliner Ostrand — mehr dazu in der <a href="#region">Regionsübersicht</a>. Auch außerhalb davon helfen wir gern weiter.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta" id="verkaufen">
   <div class="wrap">
@@ -344,8 +512,8 @@
         </span>
         <p>Ihr persönlicher Immobilienmakler in Petershagen/Eggersdorf, Strausberg und dem Berliner Umland. Ehrlich, wertig, nah.</p>
       </div>
-      <div class="foot-col"><h4>Leistungen</h4><a href="#verkaufen">Verkauf</a><a href="#verkaufen">Vermietung</a><a href="#bewertung">Bewertung</a><a href="#ablauf">Beratung</a></div>
-      <div class="foot-col"><h4>Unternehmen</h4><a href="#team">Über uns</a><a href="#team">Team</a><a href="#angebote">Objekte</a><a href="mailto:hallo@immoinsel.de">Kontakt</a></div>
+      <div class="foot-col"><h4>Leistungen</h4><a href="#leistungen">Verkauf</a><a href="#leistungen">Vermietung</a><a href="#bewertung">Bewertung</a><a href="#leistungen">Finanzierung &amp; Steuern</a></div>
+      <div class="foot-col"><h4>Unternehmen</h4><a href="#team">Über uns</a><a href="#region">Unsere Region</a><a href="#angebote">Objekte</a><a href="#faq">Häufige Fragen</a><a href="mailto:hallo@immoinsel.de">Kontakt</a></div>
       <div class="foot-col"><h4>Kontakt</h4><a href="https://www.google.com/maps/search/?api=1&query=Strausberger+Str.+1,+15345+Petershagen/Eggersdorf" target="_blank" rel="noopener">Strausberger Str. 1<br>15345 Petershagen/Eggersdorf</a><a href="tel:+493341445512">03341 445512</a><a href="mailto:hallo@immoinsel.de">hallo@immoinsel.de</a></div>
     </div>
     <div class="foot-bar">
